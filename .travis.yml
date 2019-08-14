@@ -10,4 +10,4 @@ before_script:
   - export PYTHONPATH=$PYTHONPATH:/usr/lib/python2.7/dist-packages
 
 script:
-  - rostest pimoues_vision_control test-left-face.launch
+  - rostest pimouse_vision_control test-left-face.launch
