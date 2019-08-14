@@ -1,0 +1,8 @@
+<launch>
+	<include file="$(find pimouse_ros)/launch/pimouse.launch" />
+	<node pkg="rosbag" type="play" name="player" output="screen" args="/home/ubuntu/2019-08-14-02-42-55.bag" required="true" />
+	<node pkg="pimouse_vision_control" name="face_to_face" type="face_to_face.py" output="screen" />
+	<node pkg="mjpeg_server" name="mjpeg_server" type="mjpeg_server">
+		<param name="port" value="10000" />
+	</node>
+</launch>
