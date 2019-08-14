@@ -4,8 +4,11 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys  6B05F25D762E3157
 sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
 
 sudo apt-get update
-#sudo apt-get -f install libopencv-dev 
-#sudo apt-get -f install python-opencv
+
+sudo apt-get install -f
+
+sudo apt-get install libopencv-dev 
+sudo apt-get -f install python-opencv
 
 #sudo /bin/bash -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf'
 #sudo ldconfig
