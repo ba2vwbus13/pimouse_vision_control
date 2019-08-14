@@ -3,10 +3,16 @@
 sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-keys 6B05F25D762E3157
 sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-keys C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
 
-sudo apt-get update
-sudo apt-get dist-upgrade
-sudo apt-get autoremove
-sudo apt-get clean
+#sudo apt-get update
+#sudo apt-get dist-upgrade
+#sudo apt-get autoremove
+#sudo apt-get clean
+
+sudo apt-get download dpkg
+sudo dpkg -i dpkg_1.17.5ubuntu5.8_amd64.deb
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get -f install
+sudo apt-get update && sudo apt-get upgrade
 
 #required packages
 sudo pip install catkin_pkg
