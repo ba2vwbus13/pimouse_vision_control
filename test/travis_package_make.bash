@@ -7,15 +7,15 @@ sudo apt-get update
 
 sudo apt-get install -f
 
-sudo apt-get install libopencv-dev 
-sudo apt-get -f install python-opencv
+#sudo apt-get install libopencv-dev 
+#sudo apt-get -f install python-opencv
 
 #sudo /bin/bash -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf'
 #sudo ldconfig
 
 #sudo apt-get install libopencv-dev
-sudo apt-get install ros-indigo-cv-bridge
-sudo apt-get install ros-indigo-cv-camera
+#sudo apt-get install ros-indigo-cv-bridge
+#sudo apt-get install ros-indigo-cv-camera
 
 #sync and make
 rsync -av ./ ~/catkin_ws/src/pimouse_vision_control/
