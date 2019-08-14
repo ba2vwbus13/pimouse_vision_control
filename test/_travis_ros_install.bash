@@ -1,9 +1,12 @@
-red packages
-pip install catkin_pkg
-pip install empy
-pip install pyyaml
-pip install rospkg
+#!/bin/bash -xve
 
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys  6B05F25D762E3157
+
+#required packages
+sudo pip install catkin_pkg
+sudo pip install empy
+sudo pip install pyyaml
+sudo pip install rospkg
 #ros install
 cd ..
 git clone https://github.com/ryuichiueda/ros_setup_scripts_Ubuntu14.04_server.git
@@ -18,3 +21,4 @@ source /opt/ros/indigo/setup.bash
 catkin_init_workspace
 cd ~/catkin_ws
 catkin_make
+
