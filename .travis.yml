@@ -2,8 +2,8 @@ sudo: required
 #dist: trusty
 dist: xenial
 
-#before_script:
-script:
+before_script:
+#script:
   - bash -xve ./test/travis_ros_install_xenial.bash
   - source ~/catkin_ws/devel/setup.bash
   - bash -xve ./test/travis_package_make_xenial.bash
@@ -11,6 +11,6 @@ script:
   - bash -xve ./test/travis_prepare_dummy_files.bash
   - export PYTHONPATH=$PYTHONPATH:/usr/lib/python2.7/dist-packages
 
-#script:
-#  - rostest pimouse_vision_control test-left-face.launch
+script:
+  - rostest pimouse_vision_control test-left-face.launch
 #  - rostest pimouse_vision_control test-right-face.launch
