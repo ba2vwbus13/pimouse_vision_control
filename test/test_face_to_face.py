@@ -20,7 +20,7 @@ class VisionTest(unittest.TestCase):
 			lhz = self.get_file_freq("l")
 			rhz = self.get_file_freq("r")
 
-			if lhz == prev_lhz adn rhz == prev_rhz:
+			if lhz == prev_lhz and rhz == prev_rhz:
 				continue
 
 			if lhz > rHz: r_turn_count += 1
