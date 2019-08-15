@@ -8,7 +8,7 @@ script:
   - source ~/catkin_ws/devel/setup.bash
   - bash -xve ./test/travis_package_make_xenial.bash
   - source ~/catkin_ws/devel/setup.bash
-  - ./test/travis_prepare_dummy_files.bash
+  - bash -xve ./test/travis_prepare_dummy_files.bash
   - export PYTHONPATH=$PYTHONPATH:/usr/lib/python2.7/dist-packages
 
 #script:
