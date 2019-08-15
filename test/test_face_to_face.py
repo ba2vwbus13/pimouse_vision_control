@@ -24,7 +24,7 @@ class VisionTest(unittest.TestCase):
 				continue
 
 			if lhz > rhz: r_turn_count += 1
-			if lhz < rhz: l_tuen_count += 1
+			if lhz < rhz: l_turn_count += 1
 
 			prev_lhz, prev_rhz = lhz, rhz
 
