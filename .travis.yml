@@ -13,4 +13,4 @@ before_script:
 
 script:
   - rostest pimouse_vision_control test-left-face.launch
-#  - rostest pimouse_vision_control test-right-face.launch
+  - rostest pimouse_vision_control test-right-face.launch
