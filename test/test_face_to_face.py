@@ -11,7 +11,7 @@ class VisionTest(unittest.TestCase):
 
 	def test_put_freq(self):
 		count, l_turn_count, r_turn_count = 0, 0, 0
-		start = rospy.Time.now().to_set()
+		start = rospy.Time.now().to_sec()
 
 		prev_lhz, prev_rhz = 0, 0
 		rate = rospy.Rate(10)
