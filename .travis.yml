@@ -6,8 +6,8 @@ dist: xenial
 script:
   - bash -xve ./test/travis_ros_install_xenial.bash
   - source ~/catkin_ws/devel/setup.bash
-#  - bash -xve ./test/travis_package_make.bash
-#  - source ~/catkin_ws/devel/setup.bash
+  - bash -xve ./test/travis_package_make_xenial.bash
+  - source ~/catkin_ws/devel/setup.bash
 #  - ./test/travis_prepare_dummy_files.bash
 #  - export PYTHONPATH=$PYTHONPATH:/usr/lib/python2.7/dist-packages
 
