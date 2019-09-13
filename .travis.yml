@@ -1,9 +1,7 @@
 sudo: required
-#dist: trusty
 dist: xenial
 
 before_script:
-#script:
   - bash -xve ./test/travis_ros_install_xenial.bash
   - source ~/catkin_ws/devel/setup.bash
   - bash -xve ./test/travis_package_make_xenial.bash

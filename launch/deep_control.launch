@@ -1,0 +1,19 @@
+<launch>
+	<!-- モータなど基本的なROSノードを立ち上げる -->
+	<include file="$(find pimouse_ros)/launch/pimouse.launch" />
+
+	<!-- 画像を取得してROSノードで配信 -->
+	<node pkg="cv_camera" name="cv_camera" type="cv_camera_node">
+		<param name="rate" value="10.0" />
+		<param name="image_width" value="320" />
+		<param name="image_height" value="240" />
+	</node>
+
+	<!-- 画像をブラウザに配信 -->
+	<node pkg="mjpeg_server" name="mjpeg_server" type="mjpeg_server">
+		<param name="port" value="10000" />
+	</node>
+
+	<!-- 深さ制御（開発プログラム) -->
+	<node pkg="pimouse_vision_control" name="deep_control" type="deep_control.py" output="screen" />
+</launch>
